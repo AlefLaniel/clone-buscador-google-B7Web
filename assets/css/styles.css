@@ -1,0 +1,517 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.barra-busca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+    
+}
+
+.barra-busca .logo{
+    height: 35px;
+    width: 99px;
+    object-fit: cover;
+}
+
+.input-busca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1.5px 8px;
+    height: 40px;
+    margin-right: 400px;
+}
+
+.input-busca .icons-buscador{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.input-busca img{
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+}
+
+.input-busca .teclado{
+    height: 16px;
+    width: 25px
+}
+
+.input-busca .buscador{
+    height: 15px;
+    width: 15px;
+}
+
+.input-busca input{
+    border: none;
+    width: 80vh;
+}
+
+.input-busca  input:focus{
+    box-shadow: 0 0 0 0;
+    outline: none;
+}
+
+.linha-buscador{
+    height: 30px;
+    width: 1px;
+    background-color: #dfe1e5;
+    margin-left: 10px;
+}
+
+.icons-buscador{
+    height: 48px;
+}
+
+.config-buscador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.config-buscador img{
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+}
+.config-buscador .icon-perfil{
+    border-radius: 50%;
+}
+
+.item-busca{
+    display: flex;
+    align-items: center;
+    padding: 0 180px;
+    border-bottom: 1px solid #dfe1e5;
+    margin-left: -10px;
+}
+
+.item-busca li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 25px;
+    font-size: 14px;
+    color: #646568;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item-busca li svg{
+    margin-right: 5px;
+}
+
+
+.container{
+    padding: 10px 0 45px 170px;
+}
+
+.container p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #646568;
+    margin-bottom: 30px;
+}
+
+.area-resultados{
+    justify-content: center;
+    align-items: center;
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-acesso a{
+    text-decoration: none;
+    color:#646568; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.dados-resultados h2 a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dados-resultados h2 a:hover{
+    text-decoration: underline;
+}
+
+.dados-resultados p{
+    color:#646568; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+}
+
+.dados-especificos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+
+.dados-especificos .dados-resultados{
+    margin-right: 50px;
+    width: 300px;
+}
+
+.dados-especificos .dados-resultados .especifico2{
+    margin-left: 30px;
+}
+
+.dados-pesquisa{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-dados{
+    width: 22.133235724743777vw;
+    height: 7.874015748031496vh;
+    display: flex;
+    border-radius: 40px;
+    background-color: #f1f3f4;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 16px 35px;
+}
+
+
+.info-dados svg{
+    margin-right: 30px;
+}
+.info-dados a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.info-dados a:hover{
+    text-decoration: underline;
+}
+
+.proxima_pag{
+    justify-content: center;
+    align-items: center;
+}
+
+.pag_proxima{
+    margin-left: 23vh;
+}
+
+footer{
+    background-color: #f2f2f2;
+    padding: 25px 0;
+}
+
+.localizacao, .informacoes{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1vh 13vw;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linha2{
+    height: 38px;
+    width: 1.5px;
+    margin: 0px 10px -6px 10px;
+    background-color: #dadce0;
+}
+
+.localizacao svg{
+    margin-right: 3px;
+}
+
+.localizacao p, 
+.localizacao strong,
+.localizacao a{
+    font-size: 15px;
+} 
+
+.localizacao p,
+.informacoes li{
+    color: #70757a;
+}
+
+.localizacao .espaco{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.localizacao a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.informacoes ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoes ul li{
+    font-size: 15px;
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.informacoes ul li:hover{
+    color: black;
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 2560px) and (max-width: 3000px) {
+    .input-busca{
+        margin-right: 1500px;
+    }
+
+    .input-busca input{
+        width: 40vh;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1900px) {
+    .input-busca{
+        margin-right: 450px;
+    } 
+
+    .input-busca input{
+        width: 60vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .input-busca{
+        margin-right: 170px;
+    } 
+
+    .input-busca input{
+        width: 50vh;
+    }
+
+    .item-busca li{
+        margin-right: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .input-busca{
+        margin-right: 80px;
+    } 
+    .input-busca input{
+        width: 25vh;
+    }
+
+    .item-busca{
+        padding: 0 48px;
+    }
+
+    .input-busca img{
+        height: 16px;
+        width: 16px;
+        margin-left: 10px;
+    }
+    .input-busca .teclado{
+        height: 14px;
+        width: 20px
+    }
+
+    .container{
+        padding: 10px 0 45px 39px;
+    }
+
+    .info-dados{
+        width: 30.133235724743777vw;
+        height: 5.874015748031496vh;
+        padding: 2px 17.5px;
+    }
+
+
+    .info-dados a{
+        font-size: 14px;
+    } 
+
+    .pag_proxima{
+        margin-left: 7vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .container{
+        padding: 10px 5px 45px 23px;
+    }
+    .container p{
+        font-size: 14px;
+    }
+
+    .dados-especificos{
+        width: 50%;
+        justify-content: center;
+    }
+
+    .dados-especificos .dados-resultados{
+        width: 150px;
+        margin-right: 20px;
+        justify-content:center;
+    }
+
+    .link-acesso a, .dados-resultados p{
+        font-size: 12px;
+    }
+
+    .dados-resultados h2 a{
+        font-size: 18px;
+    }
+
+    .barra-busca .logo{
+        height: 17.5px;
+        width: 49.5px;
+        object-fit: cover;
+    }
+
+    .input-busca{
+        padding: 2.5px 10px;
+        height: 20px;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+
+    .input-busca input{
+        width: 15vh;
+        margin-left: -5px;
+    }
+
+    .input-busca img{
+        height: 10px;
+        width: 10px;
+        margin-left: 10px;
+    }
+
+    .linha-buscador{
+        height: 10px;
+    }
+
+    .input-busca .teclado{
+        height: 10px;
+        width: 17px
+    }
+    
+    .input-busca .buscador{
+        height: 10px;
+        width: 10px;
+    }
+
+    .input-busca{
+        margin-right: 40px;
+    } 
+
+    .config-buscador img{
+        height: 14px;
+        width: 14px;
+        margin-left: 10px;
+    }
+
+    .item-busca li{
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    .item-busca li svg{
+        height: 10px;
+        width: 10px;
+        margin-right: 5px;
+    }
+    
+    .barra-busca{
+        margin: 17.5px;
+    }
+
+    .item-busca{
+        padding: 0 28px;
+    }
+
+    .info-dados{
+        width: 55.133235724743777vw;
+        height: 5.874015748031496vh;
+        padding: 2px 15.5px;
+    }
+
+    .pag_proxima{
+        width: 50%;
+        margin-left: 3vh;
+    }
+}
+
+@media (max-width: 375px){
+    .input-busca{
+        margin-right: 10px;
+    } 
+
+    .input-busca input{
+        width: 10vh;
+        
+    }
+
+    .item-busca li{
+        margin-top: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .item-busca .mais-li{
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    .item-busca .ferramentas{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    .localizacao p, 
+.localizacao strong,
+.localizacao a{
+    font-size: 12px;
+} 
+.informacoes ul li{
+    font-size: 12px;
+
+}
+.copy{
+    font-size: 12px;
+}
+}

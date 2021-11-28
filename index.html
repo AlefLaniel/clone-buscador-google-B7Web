@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- SVGs do header-->
+    <title>Clone de Busca do Gootle</title>
+</head>
+<body>
+    <header>
+        <div class="barra-busca">
+            <img class="logo" src="./assets/images/logo.png" alt="Logo">
+            <div class="input-busca">
+                <input type="text" />
+                <div class="linha-buscador"></div>
+                <div class="icons-buscador">
+                    <img class="teclado" src="./assets/images/keyboard.png" alt="teclado">
+                    <img src="./assets/images/mic.png" alt="microfone">
+                    <img class="buscador" src="./assets/images/search.png" alt="buscador">
+                </div>
+            </div>
+            <div class="config-buscador">
+                <img src="https://img.icons8.com/material-outlined/50/000000/settings.png"/>
+                <img src="./assets/images/menuQ.png" alt="menu">
+                <img class="icon-perfil" src="./assets/images/perfilImg.jpg" alt="perfil">
+            </div>
+        </div>
+        <ul class="item-busca">
+            <li style="color: blue;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                Todas
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+                    <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                </svg>
+                Videos
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                    <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                    <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                </svg>
+                Notícias
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                </svg>
+                Imagens
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                    <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+                    <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+                  </svg>
+                Shopping
+            </li>
+            <li class="mais-li">
+                <img src="./assets/images/verticalpontinhos.svg" alt="">
+                Mais
+            </li>
+            <li class="ferramentas">Ferramentas</li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <p>Aproximadamente 25.700 resultados (0,76 segundos)</p>
+            <div class="area-resultados">
+                <div class="resultados">
+                    <div class="link-acesso">
+                        <a href="https://b7web.com.br">https://b7web.com.br</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#646568" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </div>
+                    <div class="dados-resultados">
+                        <h2><a href="https://b7web.com.br">B7Web</a></h2>
+                        <p>Este é o meu jornal principal, então é onde você sabe tudo que está acontecendo...<br/>
+                            Aqui é contéudo,contéudo, contéudo. Então é onde você vai pegar muitas...
+                        </p>
+                    </div>
+                    <div class="dados-especificos">
+                        <div class="dados-resultados">
+                            <h2><a href="https://b7web.com.br">Login</a></h2>
+                            <p>
+                                Nos acompanhe em nossas redes <br>
+                                sociais. APROVEITE AGORA...
+                            </p>
+                        </div>
+                        <div class="dados-resultados especifico2">
+                            <h2><a href="https://b7web.com.br">O que é HTML e pra quê serve?</a></h2>
+                            <p>
+                                O que é HTML e pra quê serve? <br>
+                                Próxima aula. Suas anotações
+                            </p>
+                        </div>
+                        <div class="dados-resultados">
+                            <h2><a href="https://b7web.com.br">Javascript +60 aulas Ver mais</a></h2>
+                            <p>
+                                Módulo 3: Conceitos Básicos 11 <br>
+                                aulas.#1:Evento de Clique#2...
+                            </p>
+                        </div>
+                        <div class="dados-resultados">
+                            <h2><a href="https://b7web.com.br">Por onde começar?</a></h2>
+                            <p>
+                                Neste artigo nás vamos responder, <br>
+                                talvez, a pergunta do século...
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="link-acesso">
+                        <a href="https://sites.google.com">https://sites.google.com > view > b7web</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#646568" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </div>
+                    <div class="dados-resultados">
+                        <h2><a href="https://sites.google.com">→ B7Web é bom? Curso Fullstack da B7Web Vale a Pena?</a></h2>
+                        <p>
+                            <strong>B7Web</strong> é uma escola online para programadores e desenvolvedores de sites e aplicativos,que <br>
+                            hoje já conta com mais de 20 mil alunos ao redor do Brasil de do...
+                        </p>
+                    </div> 
+                    <div class="link-acesso">
+                        <a href="https://www.reclameaqui.com.br">https://www.reclameaqui.com.br > empresa > b7web</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#646568" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </div>
+                    <div class="dados-resultados">
+                        <h2><a href="https://www.reclameaqui.com.br">B7Web - Reclame Aqui</a></h2>
+                        <p>
+                            Saiba se a empresa <strong>B7Web</strong> é confiável, segundo os consumidores. Se tiver problemas, <br>
+                            reclame, resolva, avalie. Reclame Aqui.
+                        </p>
+                    </div> 
+                    <div class="link-acesso">
+                        <a href="https://agenciars.com.br">https://agenciars.com.br > Blog</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#646568" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </div>
+                    <div class="dados-resultados">
+                        <h2><a href="https://agenciars.com.br">B7Web É Bom Mesmo? Vale a Pena Se Inscrever? Resenha ...</a></h2>
+                        <p>
+                            <strong>B7Web</strong> é um curso online para programadores desenvolvida pelo Bonieky Lacerda e que hoje <br> já conta com mais de 27 mil alunos de todos os cantos do Brasil e do ...
+                        </p>
+                    </div> 
+                </div>
+                <div class="pesquisas-relacionadas">
+                    <p>Pesquisas relacionadas</p>
+                    <div class="dados-pesquisa">
+                        <div class="info-dados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646568" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="">b7web <strong>full stack</strong></a>
+                        </div>
+
+                        <div class="info-dados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646568" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="">b7web <strong>full stack</strong></a>
+                        </div>
+
+                        <div class="info-dados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646568" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="">b7web <strong>full stack</strong></a>
+                        </div>
+
+                        <div class="info-dados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646568" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="">b7web <strong>full stack</strong></a>
+                        </div>
+
+                        <div class="info-dados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646568" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="">b7web <strong>full stack</strong></a>
+                        </div>
+
+                        <div class="info-dados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646568" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="">b7web <strong>full stack</strong></a>
+                        </div>
+
+                        <div class="info-dados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646568" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="">b7web <strong>full stack</strong></a>
+                        </div>
+
+                        <div class="info-dados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#646568" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <a href="">b7web <strong>full stack</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proxima_pag">
+                <img class="pag_proxima" src="./assets/images/proximaspaginas.png" alt="próximas máginas">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="localizacao">
+            <p>Brasil</p>
+            <div class="linha2"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#70757a" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+            </svg>
+            <strong>Aracaju, Sergipe</strong>
+            <p class="espaco"> - </p>
+            <a href="#">Do seu endereço IP - Atualizar local</a>
+        </div>
+        <hr>
+        <div class="informacoes">
+            <ul>
+                <li>Ajuda</li>
+                <li>Enviar feedback</li>
+                <li>Privacidade</li>
+                <li>Termos</li>
+            </ul>
+        </div>
+        <div class="copy">
+            Copyright &copy; Todos os direitos reservados <br>
+            Desenvolvido por Alef Laniel ☻
+        </div>
+    </footer>
+</body>
+</html>
